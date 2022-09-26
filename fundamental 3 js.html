@@ -7,24 +7,25 @@
     <title>Fundamentals 3</title>
 </head>
 <body>
+    <h1>First JS code</h1>
     <script>
         let n = parseInt(prompt("input a number to add by 7", ""),10);
-        function add7() {
-            console.log(n + 7);
+        function add7(){
+            let add = n + 7;
+            return add;
         }
-        add7(n);
+        let p = add7(n);
+        console.log(p);
+        alert(p);
         let x = parseInt(prompt("input a number for multiplication", ""),10);
         let y = parseInt(prompt("input a second number for multiplication", ""),10);
         function multiply(x,y){
-            console.log(x * y);
+            let get = x * y;
+            return get;
         }
         let m = multiply(x,y);
+        console.log(m);
         alert(m);
-
-
-        // let multiply = x => x * 2;
-        // alert(multiply (4));
-        
     </script>
 </body>
 </html>
