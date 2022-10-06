@@ -10,22 +10,49 @@
     <h1>First JS code</h1>
     <script>
         let n = parseInt(prompt("input a number to add by 7", ""),10);
-        function add7(){
-            let add = n + 7;
-            return add;
+        function add7(n){
+            return n + 7;
         }
-        let p = add7(n);
-        console.log(p);
-        alert(p);
+        console.log(add7(n));
+        alert(add7(n));
         let x = parseInt(prompt("input a number for multiplication", ""),10);
         let y = parseInt(prompt("input a second number for multiplication", ""),10);
         function multiply(x,y){
-            let get = x * y;
-            return get;
+            return x * y;
         }
-        let m = multiply(x,y);
-        console.log(m);
-        alert(m);
+        console.log(multiply(x,y));
+        alert(multiply(x,y));
+        let name = prompt("Enter your name", "");
+        function capitalize(){
+            let take1 = name.charAt(0);
+            take2 = take1.toUpperCase();
+            let out1 = name.slice(1);
+            let join = take2.concat("", out1);
+            return join;
+        }
+        console.log(capitalize(name));
+        alert(capitalize(name));
+        function airletter(){
+            last = name.substr(-1);
+            return last;
+        }
+        console.log(airletter(name));
+        alert(airletter(name));
     </script>
 </body>
 </html>
+
+<script>
+    let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to: "));
+    for (let i = 1; i <= answer; i++){
+        if (i % 3 === 0 && i % 5 === 0){
+            console.log("FizzBuzz")
+        } else if (i % 3 === 0) {
+            console.log("Fizz");
+        } else if(i % 5 === 0) {
+            console.log("Buzz");
+        } else {
+            console.log(i);
+        }
+    }
+</script>
